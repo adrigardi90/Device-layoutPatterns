@@ -1,0 +1,85 @@
+body {
+  width: 99%;
+  margin: 0 auto;
+  max-width: 1024px;
+  font-family: fantasy;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(-90deg, #0043ff, #62e2bf);
+  height: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  position: relative;
+  top: 40%;
+}
+
+div{
+  min-height:200px;
+  margin-bottom: 10px;
+  width: 96%;
+  padding: 2% 2% 2% 2%;
+}
+
+div > :first-child {
+  text-align: center;
+}
+
+
+.left{
+  background-color: rgba(106, 160, 110, 0.64);
+  display: none;
+}
+
+.center{
+  background-color: #6aa06e;
+}
+
+.right{
+  background-color: rgba(106, 160, 110, 0.24);
+  display: none;
+}
+
+/* 2 columns -> 8% padding in total*/
+/* (100-8)/4 = 23*/
+@media screen and (min-width: 400px){
+  
+  .left{
+    float: left;
+    width: 46%; /*92/2*/
+    display: block;
+  }
+
+  .center{
+    float: right;
+    width: 46%;
+  }
+}
+
+/* 3 columns -> 12% padding in total*/
+@media screen and (min-width: 800px){
+  
+  .left{
+    width: 29.333%;
+  }
+
+  .center{
+    float: none;
+    width: 29.333%;
+    display: inline-block;
+  }
+
+  .right{
+    float: right;
+    width: 29.333%;
+    display: block;
+  }
+}
+
+
+

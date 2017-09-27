@@ -1,0 +1,70 @@
+body {
+  width: 99%;
+  font-family: fantasy;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(-90deg, #0043ff, #62e2bf);
+  height: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  position: relative;
+  top: 40%;
+}
+
+div {
+  min-height:200px;
+  margin-bottom: 10px;
+  width: 96%; /* There are padding right and left: 100 - 4% */
+  padding: 2% 2% 2% 2%;
+}
+
+div > :first-child {
+  text-align: center;
+}
+
+img {
+  float: left;
+  margin-right: 2%;
+  max-width: 100%;
+}
+
+.up{
+  background-color: #6aa06e;
+}
+
+.left{
+  background-color: rgba(106, 160, 110, 0.64);
+}
+
+.right{
+  background-color: rgba(106, 160, 110, 0.24);
+}
+
+/* 2 columns = 8% padding*/
+/* (100-8)/2 = 46%. 45% with space between the 2 columns*/
+@media screen and (min-width: 600px){
+  
+    .left{
+      width:45%;
+      float: left;
+    }
+
+    .right{
+      width:45%;
+      float: right;
+    }
+
+    img {
+      max-width: 60%;
+    }
+}
+ 
+}
