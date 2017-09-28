@@ -46,12 +46,19 @@ div > :first-child {
 @media screen and (min-width: 700px){
   
   .left{
+    float: left;
     width:23%;
+    min-height:100vh;
   }
 
   .center{
     float: right;
     width:69%;
+    min-height:100vh;
+  }
+
+  .right{
+    float: left;
   }
 }
 
@@ -62,10 +69,10 @@ div > :first-child {
   .right{
     float: right;
     width:22%;
+    min-height:100vh;
   }
 
   .left{
-    float: left;
     width:22%;
   }
 

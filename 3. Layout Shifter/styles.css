@@ -48,7 +48,7 @@ div > :first-child {
 @media screen and (min-width: 800px){
   
  .side{
-    position: absolute;
+    float: left;
     max-width: 184px; /*23% of 800px*/
     width: 184px; /*23% of 800px*/
     height: 100%;
